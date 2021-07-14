@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Minimal Portfolio Theme">
+<meta name="keywords" content="responsive, retina ready, html5, css3, creative, portfolio, bootstrap theme" />
+<meta name="author" content="KingStudio.ro">
+
+<!-- favicon -->
+<link rel="icon" href="images/favicon.png">
+<!-- page title -->
+<title>Kat McClure</title>
+<!-- bootstrap css -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- css -->
+<link href="css/style.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet">
+<link href="css/magnific-popup.css" rel="stylesheet">
+<!-- fonts -->
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,700,800,900" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href='fonts/FontAwesome.otf' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/linear-icons.css">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+<!-- preloader -->
+<div id="preloader">
+    <div class="spinner spinner-round"></div>
+</div>
+<!-- / preloader -->
+
+<!-- header -->
+<header>
+    <!-- nav -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html" style="margin-top: 10px;">
+            
+                </a>
+            </div><!-- / navbar-header -->
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html"><span>RESUME</span></a></li>
+                    <li class="active"><a href="recent.html"><span>RECENT WORK</span></a></li>
+                    <li><a href="contact.html"><span>CONTACT</span></a></li>
+                </ul>
+            </div><!--/ nav-collapse -->
+        </div><!-- / container -->
+    </nav>
+    <!-- / nav -->
+
+    <!-- header-banner -->
+    <div id="header-banner" class="demo-1">
+        <div class="banner-content text-center">
+            <div class="banner-info">
+                <h1>RECENT WORK</h1>
+                <p>A few examples of projects I've worked on recently.</p>
+            </div><!-- / banner-info -->
+        </div><!-- / banner-content -->
+    </div>
+    <!-- / header-banner -->
+</header>
+<!-- / header -->
+
+<div id="page-content" class="container">
+    <div class="section-w-image">
+        <div class="row">
+            <div class="col-sm-12">
+                <p>*Some company details have been kept vague due to confideniality restrictions.</p>
+                <br>
+
+                <h4>PROJECT 1</h4>
+                <p><strong>Client: A Vancouver-based consulting company partnered with popular Vancouver-based retailer</strong></p>
+                <p><strong>Overview</strong></p>
+                <p>Project consists of multiple apps that allow customers to book personal shopping appointments with personal shoppers via video chat. I built an API that is utilized by the apps to perform CRUD operations. I also built the Web App which allows customers to sign up, browser retailers, manage their personal preferences and book/cancel styling appointments with a personal shopper. Worked with an external iOS developer.</p>
+
+                <p><strong>Technologies</strong></p>
+                <p>- Built the API using PHP and Laravel</p>
+                <p>- Integrated middleware to protect authenticated customer and personal shopper routes from incorrect user type access</p>
+                <p>- Worked with Postman to organize, document and test all of the endpoints</p>
+                <p>- Built the web app using PHP and Laravel</p>
+                <p>- Utilized Guzzle to make calls to the API endpoints from the web app</p>
+
+                <p><strong>Integrations</strong></p>
+                <p>- Integrated with Twilio to send SMS appointment confirmations and reminders, as well as to create the video chat tokens which are used by the iOS app to begin the video chat</p>
+                <p>- Integrated with Shopify Admin API to allow creation of draft orders by personal shopper during video chat</p>
+                <p>- Integrated with Pusher to push event notifications to the iOS app</p>
+                <p>- Amazon S3 utilized to store retailer images in a central location to be accessed by all apps</p>
+
+                <br>
+
+                <h4>PROJECT 2</h4>
+                <p><strong>Client: A Vancouver-based demolition company</strong></p>
+                <p><strong>Overview</strong></p>
+                <p>A web application to track projects, documents, tasks, time entries and equipment for a demolition company. For this project, I built out the primary functionality to manage the aforementioned data through CRUD operations. This project consists of a lot of forms, data tables and reports. I also built a tool for users to create their own custom form definitions with a variety of input types and a drag and drop interface to edit field order.</p>
+                <p>I created an “offline” mode for the app, which allows workers in remote locations to view and fill out forms on their tablets in the field. The form definitions, drafts and submissions are stored in HTML local storage and submitted to the database once the user returns back online.</p>
+
+                <p><strong>Technologies</strong></p>
+                <p>- Application built using PHP and Laravel</p>
+                <p>- Used a JavaScript Service Worker to cache essential application pages and assets for viewing in offline mode</p>
+                <p>- Utilized KoolReport to render reports related to time entries by employee and project</p>
+            
+                <br>
+
+                <h4>PROJECT 3</h4>
+                <p><strong>Client: LinkBrandr</strong></p>
+                <p><strong>Overview</strong></p>
+                <p>A subscription based platform for sharing links through social media while the user attaches their branding to the shared links. If the target link can be displayed in an iframe, it is displayed with a branded bar across the top of the link. If it can’t be displayed in an iframe, a splash page displays for a number of seconds with the branded information before redirecting to the provided link. I build a public website with an authenticated dashboard for users to log in and manage their profile, branding and saved links, as well as the interface that displays the branded links and an admin site to manage users/subscriptions.</p>
+
+                <p><strong>Technologies</strong></p>
+                <p>- Application built using PHP and Laravel</p>
+                <p>- Implemented a Bootstrap theme for the public facing website</p>
+                <p>- Used Socialite to integrate Facebook authentication allowing users to sign up with their Facebook account rather than their email address.</p>
+                <p>- Utilized Goutte to scrape web urls and read response headers. When a user shares a new link, it is utilized to target the site’s meta tags to grab titles and descriptions. It is also used to determine if the url has the X-Frame-Options header set, which means the website can’t be used in an iframe. </p>
+
+                <p><strong>Integrations</strong></p>
+                <p>-Stripe used for payment processing and to allow users to choose between an Annual or Monthly subscription</p>
+                <p>- Drip JavaScript API used to tag user actions for marketing purposes</p>
+
+            </div>
+        </div><!-- / row -->
+    </div><!-- / section-w-image -->
+
+</div><!-- / container -->
+<!-- / content -->
+
+<!-- footer -->
+<footer>
+    <div class="container">
+        <p class="footer-info">
+            <span class="social pull-right">
+                 <a href="mailto:kat.mcclure10@gmail.com"><i class="fa fa-envelope-o"></i></a>
+                 <a href="http://www.linkedin.com/in/kat-mcclure/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            </span>
+        </p>
+    </div><!-- / container -->
+</footer>
+<!-- / footer -->
+
+<!-- javascript -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+
+<!-- portfolio -->
+<script src="js/custom.js"></script>
+<script src="js/jquery.shuffle.min.js"></script>
+<!-- lightbox -->
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript">
+// This will create a single gallery from all elements that have class "lightbox"
+$('.lightbox').each(function() {
+    $(this).magnificPopup({
+        delegate: 'a.open-gallery', // the selector for gallery item
+        type: 'image',
+        gallery: {
+          enabled:true
+        }
+    });
+});
+</script>
+<!-- / lightbox -->
+<!-- / portfolio -->
+
+<!-- preloader -->
+<script src="js/preloader.js"></script>
+<!-- / preloader -->
+
+<!-- / javascript -->
+</body>
+
+</html>
