@@ -1785,7 +1785,7 @@ table > thead > tr > th, table > thead > tr > td, table > tbody > tr > th, table
 /* End Navigations */
 /* Banners */
 #header-banner {
-  background-color: lightblue;
+  background-color: darkslategrey;
 }
 
 .banner-content {
